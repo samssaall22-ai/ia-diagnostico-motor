@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #090b10;
+  --foreground: #e7ecf7;
+  --panel: #11151f;
+  --panel-border: #1f2a3d;
+  --muted: #97a3bb;
+  --accent: #3b82f6;
+  --accent-soft: #1d4ed8;
+  --danger: #ef4444;
+  --shadow: 0 0 0 1px rgba(31, 42, 61, 0.65), 0 22px 55px -40px rgba(0, 0, 0, 0.95);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #090b10;
+    --foreground: #e7ecf7;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+* {
+  border-color: var(--panel-border);
+}
+
+.grid-overlay {
+  background-image:
+    linear-gradient(to right, rgba(55, 65, 81, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(55, 65, 81, 0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
+}
+
+.tech-panel {
+  border: 1px solid rgba(31, 42, 61, 0.9);
+  background: rgba(17, 21, 31, 0.78);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(10px);
+}
