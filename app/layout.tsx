@@ -13,14 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "AutoPrecision Pro",
-  description: "Plataforma web de diagnosis técnica de coches con informes profesionales.",
-  icons: {
-    icon: "/icon",
-  },
-};
-
+export const metadata = {
+  title: 'AutoPrecision Pro | Diagnosis de Motor 24h',
+  description: 'Descubre qué le pasa a tu coche al instante. Informe mecánico profesional. Ahorra dinero en el taller por solo 2,99€.',
+  keywords: 'diagnosis motor, averia coche, mecanico ia, informe mecanico, luz motor encendida, fallo motor',
+}
 export default function RootLayout({
   children,
 }: Readonly<{
