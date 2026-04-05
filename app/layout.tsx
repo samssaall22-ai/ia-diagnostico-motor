@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: 'AutoPrecision Pro | Diagnosis de Motor 24h',
-  description: 'Descubre qué le pasa a tu coche al instante. Informe mecánico profesional. Ahorra dinero en el taller por solo 2,99€.',
+  description: 'Descubre qué le pasa a tu coche al instante. Informe mecánico profesional por. Ahorra dinero en el taller por solo 2,99€.',
   keywords: 'diagnosis motor, averia coche, mecanico ia, informe mecanico, luz motor encendida, fallo motor',
+  verification: {
+    google: '<meta name="google-site-verification" content="lKdM8NknZVHDArH2oTKJ84D6GQ2YT4ZMDNOR4aViVpY" />', 
+  },
 }
 export default function RootLayout({
   children,
