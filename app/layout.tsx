@@ -18,7 +18,7 @@ export const metadata = {
   description: 'Descubre qué le pasa a tu coche al instante. Informe mecánico profesional por. Ahorra dinero en el taller por solo 2,99€.',
   keywords: 'diagnosis motor, averia coche, mecanico ia, informe mecanico, luz motor encendida, fallo motor',
   verification: {
-    google: '<meta name="google-site-verification" content="lKdM8NknZVHDArH2oTKJ84D6GQ2YT4ZMDNOR4aViVpY" />', 
+    google: 'lKdM8NknZVHDArH2oTKJ84D6GQ2YT4ZMDNOR4aViVpY', 
   },
 }
 export default function RootLayout({
